@@ -224,7 +224,7 @@ nav {
 
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .home {
         background-size: 725px;
         background-position-x: 371px;
@@ -490,9 +490,6 @@ nav {
     margin-top: 143px;
 }
 .header-cat2{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     height: 70px;
@@ -513,26 +510,29 @@ nav {
     transition: all 0.3s ease;
 }
 .main-products{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,auto));
-    width: 80%;
-    margin-left: 10%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main-products div{
-    width: 95%;
     margin-top: 30px;
     box-shadow: 1px 2px 11px 4px rgb(14 55 54 /15%);
     border-radius: 8px;
     position: relative;
     cursor: pointer;
+    width: 355px;
+    height: 442px;
 }
 .main-products img{
     width: 240px;
     height: 240px;
-    padding-top: 10px;
-    margin-left: 15%;
+    padding-top: 10px; 
+    margin-left: 15%; 
     margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main-products h4{
     margin-left: 20px;
@@ -540,6 +540,7 @@ nav {
 .main-products h2{
     margin-left: 20px;
     margin-top: 20px;
+    font-size: 23px;
 }
 .main-products h3{
     margin-left: 20px;
@@ -581,10 +582,19 @@ nav {
     font-weight: 700;
     clip-path: polygon(100% 0, 82% 51%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px){
     .products{
-        margin-top: 0px;
-        padding-top: 1px;
+        margin-top: 50px;
+    }
+    .main-products div{
+        margin-top: 30px;
+        box-shadow: 1px 2px 11px 4px rgb(14 55 54 /15%);
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
+        width: 355px;
+        height: auto;
+        padding-bottom: 1px;
     }
     .header-cat2{
         margin-top: 0px;
@@ -592,7 +602,6 @@ nav {
         align-items: center;
         padding-top: 127px;
         margin-bottom: 40px;
-        width: 80%;
     }
     .header-cat2 h1{
         font-size: 20px;
@@ -604,34 +613,11 @@ nav {
         font-size: 20px;
         font-weight: 400;
         border-radius: 20px;
-    }
-    .main-products img{
-        width: 240px;
-        height: 214px;
-        padding-top: 10px;
-        margin-bottom: 5%;
-    }
-    .main-products h4{
-        margin-left: 20px;
-    }
-    .main-products h2{
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-    .main-products h3{
-        margin-left: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 22px;
-    }
-    .main-products{
-        margin-left: 4%;
     }
 }
 @media only screen and (max-width:479px){
     .products{
-        margin-top: 0px;
-        padding-top: 1px;
+        margin-top: 50px;
     }
     .header-cat2{
         margin-top: 0px;
@@ -639,7 +625,6 @@ nav {
         align-items: center;
         padding-top: 127px;
         margin-bottom: 40px;
-        width: 80%;
     }
     .header-cat2 h1{
         font-size: 20px;
@@ -651,41 +636,11 @@ nav {
         font-size: 20px;
         font-weight: 400;
         border-radius: 20px;
-    }
-    .main-products img{
-        width: 240px;
-        height: 214px;
-        padding-top: 10px;
-        margin-bottom: 5%;
-    }
-    .main-products h4{
-        margin-left: 20px;
-    }
-    .main-products h2{
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-    .main-products h3{
-        margin-left: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 22px;
-    }
-    .main-products div {
-        width: 83%;
     }
 }
-@media only screen and (max-width: 1024px){
-    .main-products{
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(243px, auto));
-        width: 80%;
-        margin-left: 12%;
-    }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     .products{
-        margin-top: 0px;
-        padding-top: 1px;
+        margin-top: 50px;
     }
     .header-cat2{
         margin-top: 0px;
@@ -693,7 +648,6 @@ nav {
         align-items: center;
         padding-top: 127px;
         margin-bottom: 40px;
-        width: 80%;
     }
     .header-cat2 h1{
         font-size: 20px;
@@ -705,33 +659,6 @@ nav {
         font-size: 20px;
         font-weight: 400;
         border-radius: 20px;
-    }
-    .main-products img {
-        width: 230px;
-        height: 200px;
-        padding-top: 20px;
-        margin-bottom: 15px;
-    }
-    .main-products h4 {
-        text-align: left;
-        font-size: 18px;
-        margin-left: 48px;
-    }
-    .main-products h2{
-        margin-top: 24px;
-        font-size: 17px;
-        text-align: center;
-        margin-right: 23px;
-    }
-    
-    .main-products h3{
-        margin-left: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 16px;
-    }
-    .main-products div {
-        width: 92%;
     }
 }
 /* end of products section */
@@ -766,7 +693,7 @@ nav {
     margin: 10px 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
 
     .about{
         display: flex;
@@ -782,18 +709,18 @@ nav {
         width: 100%;
     }
     .about-text h2{
-        font-size: 19px;
+        font-size: 29px;
         line-height: 30px;
         margin-top: 30px;
         text-align: left;
     }
     .about-text h1{
-        font-size: 38px;
+        font-size: 29px;
         margin-top: 20px;
     }
 
 }
-@media only screen and (max-width:479px){
+@media only screen and (max-width: 480px){
     .about{
         display: flex;
         flex-direction: column;
@@ -808,17 +735,21 @@ nav {
         width: 100%;
     }
     .about-text h2{
-        font-size: 19px;
-        line-height: 30px;
-        margin-top: 30px;
+        font-size: 13px;
+        line-height: 27px;
+        margin-top: 20px;
         text-align: left;
     }
     .about-text h1{
-        font-size: 28px;
+        font-size: 29px;
         margin-top: 20px;
     }
+    .about{
+    margin-top: 35px;
+    padding-bottom: 0px;
+    }
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .about{
         display: flex;
         flex-direction: column;
